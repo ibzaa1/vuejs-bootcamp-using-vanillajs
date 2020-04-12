@@ -2,7 +2,9 @@ new Vue({
     el: '#vue-app',
     data: {
         name:' Ibby',
-        job: 'Ninja'
+        job: 'Banker',
+        website: 'http://whatsapp.com',
+        websiteTag: '<a href="http://whatsapp.com">Also Whats App</a>'
     },
     methods: {
         greet: function(time) {
