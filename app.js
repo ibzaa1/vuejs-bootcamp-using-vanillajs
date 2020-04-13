@@ -5,7 +5,9 @@ new Vue({
         x: 0,
         y: 0,
         name: '',
-        age: ''
+        age: '',
+        a: 0,
+        b: 0
     },
     methods: {
         add: function(inc){
@@ -26,6 +28,16 @@ new Vue({
         },
         logAge: function() {
             console.log('you entered your age');
+        }
+    },
+    computed: {
+        addToA: function () {
+            console.log('addTOa');
+            return this.a + this.age;
+        },
+        addToB: function () {
+            console.log('addTOb');
+            return this.b + this.age;
         }
     }
 });
