@@ -15,6 +15,14 @@
         <button v-on:dblclick="subtract(10)">Subtract 10 Years</button>
         <div id="canvas" v-on:mousemove="updateXY">{{ x }}, {{ y }}</div>
         <a v-on:click.prevent="click" href="https://www.whatsapp.com">Whats App</a>
+
+        <h1>Keyboard Events</h1>
+        <label>Name: </label>
+        <input type="text" v-model="name">
+        <span>{{ name }}</span>
+        <label>Age: </label>
+        <input type="text" v-model="age">
+        <span>{{ age }}</span>
     </div>
 
 
