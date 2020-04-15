@@ -7,15 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>  
-    <div id="vue-app">
-        <h1>Conditional</h1>
-        <button v-on:click="error = !error">Toggle Error</button>
-        <button v-on:click="success = !success">Toggle Success</button>
-        <!--<p v-if="error">There has been an error</p>
-        <p v-else-if="success">Success!</p>-->
-        <p v-show="error">There has been an error</p>
-        <p v-show="success">Success!</p>
+    <h1>Vue Instances</h1>
+    <div id="vue-app-one">
+        <h2>{{ title }}</h2>
+        <p>{{ greet }}</p>
     </div>
+
+    <div id="vue-app-two">
+        <h2>{{ title }}</h2>
+        <p>{{ greet }}</p>
+        <button v-on:click="changeTitle">Change app title</button>
+    </div>
+
 
 
 
