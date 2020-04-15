@@ -7,16 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>  
-    <h1>Vue Instances</h1>
+    <h1>Components</h1>
     <div id="vue-app-one">
         <h2>{{ title }}</h2>
         <p>{{ greet }}</p>
+        <greeting></greeting>
     </div>
 
     <div id="vue-app-two">
         <h2>{{ title }}</h2>
         <p>{{ greet }}</p>
         <button v-on:click="changeTitle">Change app title</button>
+        <greeting></greeting>
     </div>
 
 
